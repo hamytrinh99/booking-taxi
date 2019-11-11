@@ -1,0 +1,277 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class start_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html lang=\"en\">\n");
+      out.write("\n");
+      out.write("    <head>\n");
+      out.write("        <title>MiMi Taxi | Home :: he130054</title>\n");
+      out.write("\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
+      out.write("        <meta charset=\"utf-8\">\n");
+      out.write("        <!-- css files -->\n");
+      out.write("        <link href=\"css/bootstrap.css\" rel='stylesheet' type='text/css' /><!-- bootstrap css -->\n");
+      out.write("        <link href=\"css/style.css\" rel='stylesheet' type='text/css' /><!-- custom css -->\n");
+      out.write("        <link href=\"css/font-awesome.min.css\" rel=\"stylesheet\"><!-- fontawesome css -->\n");
+      out.write("        <!-- //css files -->\n");
+      out.write("\n");
+      out.write("        <!-- google fonts -->\n");
+      out.write("        <link href=\"//fonts.googleapis.com/css?family=Rosario:400,400i,700,700i\" rel=\"stylesheet\">\n");
+      out.write("        <!-- //google fonts -->\n");
+      out.write("\n");
+      out.write("        <!-- Latest compiled and minified CSS -->\n");
+      out.write("        <link rel=\"stylesheet\" href=\"//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css\">\n");
+      out.write("\n");
+      out.write("        <!-- Optional theme -->\n");
+      out.write("        <link rel=\"stylesheet\" href=\"//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css\">\n");
+      out.write("\n");
+      out.write("        <!-- Latest compiled and minified JavaScript -->\n");
+      out.write("        <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js\"></script>\n");
+      out.write("\n");
+      out.write("    </head>\n");
+      out.write("\n");
+      out.write("    <body>\n");
+      out.write("\n");
+      out.write("        ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "header.jsp", out, false);
+      out.write("\n");
+      out.write("\n");
+      out.write("        <!--banner-->\n");
+      out.write("        <section class=\"banner w3pvt-banner\" id=\"home\">\n");
+      out.write("            <div class=\"container\">\n");
+      out.write("                <div class=\"banner-text\">\n");
+      out.write("                    <div class=\"slider-info\">\n");
+      out.write("                        <div class=\"w3pvt-logo\">\n");
+      out.write("                            <h2>MORE THAN JUST AN AIRPORT TAXI</h2>\n");
+      out.write("                            <h3>+84 384631607</h3>\n");
+      out.write("                            <p class=\"mt-3\"> Always Available, Best Cabs, Safe Journey.</p>\n");
+      out.write("                            <img src=\"img/cab.png\" alt=\"\" class=\"img-fluid mt-md-5\" />\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </section>\n");
+      out.write("\n");
+      out.write("        <!-- booking -->\n");
+      out.write("        <section class=\"about py-sm-5 py-4\" id=\"booking\">\n");
+      out.write("            <div class=\"container py-lg-5\">\n");
+      out.write("                <div class=\"row about-grids\">\n");
+      out.write("\n");
+      out.write("                    <div class=\"col-lg-4 col-md-6 mt-lg-0 mt-4\">\n");
+      out.write("                        <div class=\"padding\">\n");
+      out.write("                            <form action=\"#\" method=\"post\">\n");
+      out.write("                                <h5 class=\"mb-3\">Book A Cab Now</h5>\n");
+      out.write("                                <div class=\"form-style-agile\">\n");
+      out.write("                                    <input placeholder=\"Customer Name\" name=\"name\" type=\"text\" required=\"\"><br>\n");
+      out.write("                                    <input placeholder=\"Phone Number\" name=\"phone\" type=\"text\" required=\"\"><br>\n");
+      out.write("                                    <p>Pickup Location:</p> <br>\n");
+      out.write("                                    <input value=\"NoiBaiAirport\" type=\"text\" name=\"pickup\" disabled><br>\n");
+      out.write("\n");
+      out.write("                                    <p>Drop Location: </p><br>\n");
+      out.write("                                    <select>    \n");
+      out.write("                                        <option value=\"hoankiem\">Hoan Kiem</option>\n");
+      out.write("                                        <option value=\"haibatrung\">Hai Ba Trung</option>\n");
+      out.write("                                        <option value=\"longbien\">Long Bien</option>\n");
+      out.write("                                        <option value=\"hoangmai\">Hoang Mai</option>\n");
+      out.write("                                    </select><br>\n");
+      out.write("                                    <input type=\"button\" name=\"reverse\" value=\"Reverse location\" action=\"on\"><br>\n");
+      out.write("\n");
+      out.write("                                    <input placeholder=\"Detail Address\" type=\"text\" required=\"\"> <br>\n");
+      out.write("                                    <input placeholder=\"Date to go\" type=\"date\" required=\"\">\n");
+      out.write("                                    <input placeholder=\"Time to go\" type=\"time\" required=\"\"><br>\n");
+      out.write("\n");
+      out.write("                                    <!--<input placeholder=\"Password\" name=\"password\" type=\"password\" required=\"\"> -->\n");
+      out.write("\n");
+      out.write("                                    <button class=\"book-btn btn\" type=\"reset\" value=\"Reset\">Reset</button> <br>\n");
+      out.write("\n");
+      out.write("                                    <button class=\"book-btn btn\" type=\"submit\" value=\"Book now\">Book now</button>\n");
+      out.write("\n");
+      out.write("                                </div>\n");
+      out.write("                            </form>\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-md-6 mt-4\">\n");
+      out.write("                        <h4>Best cabs available</h4><br>\n");
+      out.write("                        <h2>More than just an AIRPORT TAXI</h2><BR>\n");
+      out.write("                        <h3>Booking online or call hotline: (+84)38 631 607</h3>\n");
+      out.write("                        <video src=\"vid/taxibean.mp4\" width=\"750\" height=\"600\" controls></video>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </section>\n");
+      out.write("\n");
+      out.write("        <!-- //what we do -->\n");
+      out.write("        <section class=\"services py-5\" id=\"services\">\n");
+      out.write("            <div class=\"container py-lg-5 py-3\">\n");
+      out.write("                <div class=\"row service-grid-grids text-center\">\n");
+      out.write("                    <div class=\"col-lg-4 col-md-6 service-grid service-grid1\">\n");
+      out.write("                        <div class=\"service-icon\">\n");
+      out.write("                            <span class=\"fa fa-car\"></span>\n");
+      out.write("                        </div>\n");
+      out.write("                        <h4 class=\"mt-3\">Fast and Safe</h4>\n");
+      out.write("                        <p class=\"mt-3\">100% NO Accident!</p>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-lg-4 col-md-6 service-grid service-grid2 mt-md-0 mt-5\">\n");
+      out.write("                        <div class=\"service-icon\">\n");
+      out.write("                            <span class=\"fa fa-user\"></span>\n");
+      out.write("                        </div>\n");
+      out.write("                        <h4 class=\"mt-3\">Experienced Drivers</h4>\n");
+      out.write("                        <p class=\"mt-3\">20 Years Experienced!</p>\n");
+      out.write("                    </div>\n");
+      out.write("\n");
+      out.write("                    <div class=\"col-lg-4 col-md-6 service-grid service-grid3 mt-lg-0 mt-5\">\n");
+      out.write("                        <div class=\"service-icon\">\n");
+      out.write("                            <span class=\"fa fa-paper-plane\"></span>\n");
+      out.write("                        </div>\n");
+      out.write("                        <h4 class=\"mt-3\">Online Booking</h4>\n");
+      out.write("                        <p class=\"mt-3\">Just take 5 minutes - Easy for booking - Anywhere - Anytime!</p>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-lg-4 col-md-6 service-grid service-grid4 mt-5\">\n");
+      out.write("                        <div class=\"service-icon\">\n");
+      out.write("                            <span class=\"fa fa-search\"></span>\n");
+      out.write("                        </div>\n");
+      out.write("                        <h4 class=\"mt-3\">GPS Searching</h4>\n");
+      out.write("                        <p class=\"mt-3\">Follow your jouney with GPS everywhere. </p>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-lg-4 col-md-6 service-grid service-grid4 mt-5\">\n");
+      out.write("                        <div class=\"service-icon\">\n");
+      out.write("                            <span class=\"fa fa-car\"></span>\n");
+      out.write("                        </div>\n");
+      out.write("                        <h4 class=\"mt-3\">Best car ever</h4>\n");
+      out.write("                        <p class=\"mt-3\">Our Vehicle is TOP 10 the most expensive and luxury cars in the world!</p>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-lg-4 col-md-6 service-grid service-grid6 mt-5\">\n");
+      out.write("                        <div class=\"service-icon\">\n");
+      out.write("                            <span class=\"fa fa-cogs\"></span>\n");
+      out.write("                        </div>\n");
+      out.write("                        <h4 class=\"mt-3\">Friendly</h4>\n");
+      out.write("                        <p class=\"mt-3\">We are your friend and your protector. Believe in MiMi Taxi!</p>\n");
+      out.write("                    </div>\n");
+      out.write("\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </section>\n");
+      out.write("\n");
+      out.write("        <!-- vehicle -->\n");
+      out.write("        <section class=\"tarrifs py-5\" id=\"vehicle\">\n");
+      out.write("            <div class=\"container py-md-5\">\n");
+      out.write("                <div class=\"row tarrifs-grid\">\n");
+      out.write("                    <div class=\"col-lg-4 col-md-6 text-center\">\n");
+      out.write("                        <img src=\"img/c04.jpg\" alt=\"\" class=\"img-fluid\" />\n");
+      out.write("                        <div class=\"tarrif-info\">\n");
+      out.write("                            <h4 class=\"my-3\">4-SEATS</h4>\n");
+      out.write("                            <p class=\"para_vl\">Nam arcu mauris, tincidunt sed convallis non, egestas ut lacus. Cras sapien\n");
+      out.write("                                urna, malesuada ut varius.</p>\n");
+      out.write("                            <h5 class=\"mt-sm-3 mt-2\">16.000VND/Km</h5>\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-lg-4 col-md-6 text-center\">\n");
+      out.write("                        <img src=\"img/c06.jpg\" alt=\"\" class=\"img-fluid\" />\n");
+      out.write("                        <div class=\"tarrif-info\">\n");
+      out.write("                            <h4 class=\"my-3\">7-SEATS</h4>\n");
+      out.write("                            <p class=\"para_vl\">Nam arcu mauris, tincidunt sed convallis non, egestas ut lacus. Cras sapien\n");
+      out.write("                                urna, malesuada ut varius.</p>\n");
+      out.write("                            <h5 class=\"mt-sm-3 mt-2\">20.000VND/Km</h5>\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-lg-4 col-md-6 text-center mt-lg-0 mt-5\">\n");
+      out.write("                        <img src=\"img/c08.jpg\" alt=\"\" class=\"img-fluid\" />\n");
+      out.write("                        <div class=\"tarrif-info\">\n");
+      out.write("                            <h4 class=\"my-3\">16-SEATS</h4>\n");
+      out.write("                            <p class=\"para_vl\">Nam arcu mauris, tincidunt sed convallis non, egestas ut lacus. Cras sapien\n");
+      out.write("                                urna, malesuada ut varius.</p>\n");
+      out.write("                            <h5 class=\"mt-sm-3 mt-2\">25.000VND/Km</h5>\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("                <div></div>\n");
+      out.write("                <button class=\"book-btn btn\" type=\"submit\" value=\"vehicle\">Click here to show detail all vehicle</button>\n");
+      out.write("            </div>\n");
+      out.write("        </section>\n");
+      out.write("\n");
+      out.write("        <!-- stats -->\n");
+      out.write("        <section class=\"stats py-5\" id=\"stats\">\n");
+      out.write("            <div class=\"container py-sm-3\">\n");
+      out.write("                <div class=\"row\">\n");
+      out.write("                    <div class=\"col-sm-4 col-6 text-center\">\n");
+      out.write("                        <span class=\"fa mr-1 fa-users\"></span>\n");
+      out.write("                        <h4>10,000+</h4>\n");
+      out.write("                        <p>Passengers</p>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-4 col-6 text-center\">\n");
+      out.write("                        <span class=\"fa mr-1 fa-car\"></span>\n");
+      out.write("                        <h4>1200</h4>\n");
+      out.write("                        <p>Cab Drivers</p>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"col-sm-4 col-6 mt-sm-0 mt-4 text-center\">\n");
+      out.write("                        <span class=\"fa mr-1 fa-map\"></span>\n");
+      out.write("                        <h4>500</h4>\n");
+      out.write("                        <p>Cab Routes</p>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </section>\n");
+      out.write("        <!-- //stats -->\n");
+      out.write("\n");
+      out.write("        ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "footer.jsp", out, false);
+      out.write("\n");
+      out.write("\n");
+      out.write("    </body>\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
